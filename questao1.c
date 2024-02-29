@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /*1. Uma aplicação interessante de computadores é desenhar gráficos e gráficos de barras. Escreva um
 programa que leia cinco números (cada um entre 1 e 30). Para cada número lido, seu programa
