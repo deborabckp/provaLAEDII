@@ -6,7 +6,8 @@ O programa deve imprimir 10 caracteres por linha.*/
 int main() {
     int caracter = 10;
     int i;
-
+    printf("TABELA ASCII\n");
+    
     for (i = 0; i <= 127; i++) {
         printf("%c (%d)\t", (char)i, i);
 
