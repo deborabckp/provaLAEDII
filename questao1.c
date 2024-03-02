@@ -12,12 +12,18 @@ int main(){
     for( i = 0; i < 5; i++){
         printf("\n");
         scanf("%i", &num);
+    //  A condição para verificar se o numero está entre 1 e 30
+    if( num >= 1 && num <=30){
 
     for(int j = 0; j < num; j++){
         printf("*");
     }
         printf("\n");
+    }else{
+        printf("ERRO!, insira um valor entre 1 a 30\n");
     }
+    
+       }
     printf("\n");
     return 0;
 }
