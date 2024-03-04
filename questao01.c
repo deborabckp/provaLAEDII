@@ -3,7 +3,8 @@
 /*1. Uma aplicação interessante de computadores é desenhar gráficos e gráficos de barras. Escreva um
 programa que leia cinco números (cada um entre 1 e 30). Para cada número lido, seu programa
 deve imprimir uma linha contendo aquele número de asteriscos adjacentes. Por exemplo, se seu
-programa lê o número sete, ele deve imprimir *******.*/
+programa lê o número sete, ele deve imprimir *******.
+*/
 
 int main(){
     int i, num;
