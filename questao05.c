@@ -6,17 +6,13 @@ b) O valor das raízes reais.*/
 #include <stdio.h>
 #include <math.h>
 
-int RaizesReais(int a, int b, int c) {
-    int determinante = b*b - 4*a*c;
-    return determinante >= 0;
-}
 
 void cal_Raizes_Reais(int a, int b, int c) {
-    int determinante = b*b - 4*a*c;
+    int delta = b*b - 4*a*c;
 
-    if (determinante >= 0) {
-        double raiz1 = (-b + sqrt(determinante)) / (2.0 * a);
-        double raiz2 = (-b - sqrt(determinante)) / (2.0 * a);
+    if (delta >= 0) {
+        double raiz1 = (-b + sqrt(delta)) / (2.0 * a);
+        double raiz2 = (-b - sqrt(delta)) / (2.0 * a);
 
         printf("Raizes reais: %.2f e %.2f\n", raiz1, raiz2);
     } else {
@@ -24,23 +20,12 @@ void cal_Raizes_Reais(int a, int b, int c) {
     }
 }
 
-int main(int argc, char *argv[]) {
-    if (argc != 4) {
-        printf("Uso: %s <a> <b> <c>\n", argv[0]);
-        return 1;
-    }
+int main() {
+  int a,b,c;
+    printf("digite os 3 numeros inteiros");
+    scanf("%d %d %d", &a, &b,&c);
 
-    int a, b, c;
-    sscanf(argv[1], "%d", &a);
-    sscanf(argv[2], "%d", &b);
-    sscanf(argv[3], "%d", &c);
+    printf("O resultado da função dos valores a = %d, b = %d, c = %d ",a,b,c);
 
-    if (RaizesReais(a, b, c)) {
-        printf("A funcao tem raizes reais.\n");
-
-        cal_Raizes_Reais(a, b, c);
-    } else {
-        printf("A funcao nao tem raizes reais.\n");
-    }
-    return 0;
+    cal_Raizes_Reais(a,b,c);
 }
