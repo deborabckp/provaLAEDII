@@ -1,4 +1,4 @@
 # Ignore tudo dentro das pastas .vccode/ e .output/
-.vccode/*
+.vscode/*
 .output/*
 *.exe
