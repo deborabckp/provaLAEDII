@@ -20,7 +20,7 @@ int main(){
     }
         printf("\n");
     }else{
-        printf("ERRO!, insira um valor entre 1 a 30\n");
+        printf("ERRO!,insira um valor entre 1 a 30\n");
     }
     
        }
