@@ -54,6 +54,11 @@ int main()
   printf("\nDigite dois valores: \n ");
   scanf("%d %d", &m, &n);
 
+  if (m <= 0 || n <= 0)
+  {
+    printf("Por favor, insira valores positivos.\n");
+    return 1;
+  }
   printf("A(%d, %d) = %d\n", m, n, A(m, n));
   aux(m, n);
   return 0;
