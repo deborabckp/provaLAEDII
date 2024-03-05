@@ -8,16 +8,18 @@ de forma que x < a e y < b */
 
 #include <stdio.h>
 
-int A(int m, int n){
+int A(int m, int n)
+{
 
-  if (m == 0){
+  if (m == 0)
+  {
 
     return n + 1;
-
   }
-
-  else {
-    if (m > 0 && n == 0){
+  else
+  {
+    if (m > 0 && n == 0)
+    {
       return A(m - 1, 1);
     }
     else
@@ -30,24 +32,29 @@ int A(int m, int n){
   }
 }
 
-void aux(int a, int b){
+void aux(int a, int b)
+{
 
   int x, y;
 
-  for (x = 0; x < a; x++){
-        for (y = 0; y < b;y++){
+  for (x = 0; x < a; x++)
+  {
+    for (y = 0; y < b; y++)
+    {
       printf("A(%d, %d) = %d\n", x, y, A(x, y));
-        }
+    }
   }
 }
 
-int main(){
+int main()
+{
 
   int m, n;
 
   printf("\nDigite dois valores: \n ");
-  scanf("%d %d",&m,&n);
-  printf("A(%d, %d) = %d\n", m, n, A(m, n));
+  scanf("%d %d", &m, &n);
 
+  printf("A(%d, %d) = %d\n", m, n, A(m, n));
+  aux(m, n);
   return 0;
 }
