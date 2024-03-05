@@ -13,11 +13,14 @@ void converterRomano(int num) {
     for (int i = 0; i < 9; i++) {
         while (num >= decimais[i]) {
             printf("%s", Romanos[i]);
+
+            //Subtrai o valor decimal decimais[i] do número atual num, até que num seja menor que decimais[i].
             num -= decimais[i];
         }
     }
     printf("\n");
 }
+
 int main() {
     printf("Tabela de algarismos romanos para numeros decimais de 1 a 100:\n");
 

@@ -17,6 +17,7 @@
               
                 for (hipotenusa = cateto2; hipotenusa <= n; hipotenusa++){
                    
+                    //verifica se os valores formam triplo pitagórico
                     if (cateto1 * cateto1 + cateto2 * cateto2 == hipotenusa * hipotenusa){
                         printf("%d\t\t%d\t\t%d\n", cateto1, cateto2, hipotenusa);
                     }
@@ -27,6 +28,7 @@
 
     int main(){
 
+        //Determina até qual valor os catetos e a hipotenusa devem ser gerados
         int limite;
 
         printf("Digite o valor limite para os catetos e a hipotenusa: ");

@@ -7,8 +7,11 @@ f(1234) = 4321*/
 int reverse(int num) {
     int reversed = 0;
     
+    //inverter o número ate num ser diferente de 0
     while (num != 0) {
         reversed = reversed * 10 + num % 10;
+
+        //passa para o proximo numero
         num /= 10;
     }
     

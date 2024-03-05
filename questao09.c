@@ -5,10 +5,17 @@ de x1 e x2 retorne exatamente y = x1x2*/
 
 // Função recursiva para calcular o produto de dois números
 int produto(int x1, int x2) {
+
     // Caso base: quando x1 é igual a 1, retorna x2
     if (x1 == 1) {
         return x2;
     }
+
+    // Caso base: quando x2 é igual a 1, retorna x1
+    if (x2 == 1) {
+        return x1;
+    }
+
     // Chamada recursiva, decrementando x1 e somando x2
     return x2 + produto(x1 - 1, x2);
 }

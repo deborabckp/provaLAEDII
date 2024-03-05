@@ -11,6 +11,8 @@ void cal_Raizes_Reais(int a, int b, int c){
     int delta = b * b - 4 * a * c;
 
     if (delta >= 0){
+
+        //formula de x' e x´´, -b + raiz de delta / 2a
         double raiz1 = (-b + sqrt(delta)) / (2.0 * a);
         double raiz2 = (-b - sqrt(delta)) / (2.0 * a);
 

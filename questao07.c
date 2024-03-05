@@ -26,7 +26,9 @@ int main() {
     // Verifica se o número é primo
     if (num < 2) {
         printf("%d não é um número primo.\n", num);
-    } else {
+    } 
+    
+    else {
         if (isPrime(num, num / 2) == 1) {
             printf("%d é um número primo.\n", num);
         } else {
@@ -35,4 +37,4 @@ int main() {
     }
 
     return 0;
-}
+}   

@@ -6,14 +6,20 @@ forma:
 Crie uma função auxiliar que recebe dois inteiros a e b e apresenta todos os resultados para A(x, y)
 de forma que x < a e y < b */
 
+// função de Ackermann
+
 #include <stdio.h>
 
 int A(int m, int n) {
     if (m == 0) {
         return n + 1;
-    } else if (m > 0 && n == 0) {
+    } 
+    
+    else if (m > 0 && n == 0) {
         return A(m - 1, 1);
-    } else if (m > 0 && n > 0) {
+    } 
+    
+    else if (m > 0 && n > 0) {
         return A(m - 1, A(m, n - 1));
     }
     
@@ -48,6 +54,7 @@ int main()
     printf("Por favor, insira valores positivos.\n");
     return 1;
   }
+  
   printf("A(%d, %d) = %d\n", m, n, A(m, n));
   aux(m, n);
   return 0;

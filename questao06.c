@@ -7,7 +7,11 @@ para calcular o Máximo Divisor de dois números inteiros.*/
 int mdc(int a, int b) {
     if (b == 0) {
         return a;
-    } else {
+    } 
+    
+    else {
+
+        //Calcula o MDC entre b e o resto da divisão inteira de a por b
         return mdc(b, a % b);
     }
 }
