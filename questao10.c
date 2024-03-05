@@ -8,28 +8,17 @@ de forma que x < a e y < b */
 
 #include <stdio.h>
 
-int A(int m, int n)
-{
-
-  if (m == 0)
-  {
-
-    return n + 1;
-  }
-  else
-  {
-    if (m > 0 && n == 0)
-    {
-      return A(m - 1, 1);
-    }
-    else
-    {
-      if (m > 0 && n > 0)
-      {
+int A(int m, int n) {
+    if (m == 0) {
+        return n + 1;
+    } else if (m > 0 && n == 0) {
+        return A(m - 1, 1);
+    } else if (m > 0 && n > 0) {
         return A(m - 1, A(m, n - 1));
-      }
     }
-  }
+    
+    printf("Erro: Entrada inválida para A(%d, %d)\n", m, n);
+    return -1; 
 }
 
 void aux(int a, int b)
