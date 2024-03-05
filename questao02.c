@@ -10,7 +10,7 @@ int main() {
     printf("TABELA ASCII\n");
     
     for (i = 0; i <= 127; i++) {
-        printf("%c (%d)\t", (char)i, i);
+        printf("%d - %c\n", (char)i, i);
 
         if((i + 1) % caracter == 0) {
             printf("\n");
